@@ -1,0 +1,114 @@
+#invoice {
+    box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+    padding: 4mm;
+    margin: 0 auto;
+    width: 110mm;
+    background: #fff;
+}
+
+::selection {
+    background: #f31544;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #f31544;
+    color: #fff;
+}
+
+.h1 {
+    font-size: 1.0em;
+    color: #222;
+}
+
+.h2 {
+    font-size: 0.9em;
+}
+
+.h3 {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+#top,
+#mid,
+#bot {
+    border-bottom: 1px solid #eee;
+}
+
+#top {
+    min-height: 100px;
+}
+
+#bot {
+    min-height: 50px;
+}
+
+#top .logo {
+    height: 125px;
+    width: 125px;
+    border-radius: 20%;
+    background: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fast-food-restaurant-logo%2C-restaurant-logo-design-template-33255790cb8e1186b28609dd9afd4ee6_screen.jpg?ts=1668794604") no-repeat;
+    background-size: 120px 120px;
+}
+
+.info {
+    display: block;
+    margin-left: 0;
+}
+
+.title {
+    float: right;
+}
+
+.title p {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+
+.tabletitle {
+    font-size: 0.9em; /* Adjusted font size */
+    color: #222; /* Adjusted color */
+}
+
+.service {
+    border-bottom: 1px solid #eee;
+}
+
+.item {
+    width: 24mm;
+}
+
+.itemtext {
+    font-size: 0.9em; /* Adjusted font size */
+    color: #222; /* Adjusted color */
+}
+
+#legalcopy {
+    margin-top: 5mm;
+}

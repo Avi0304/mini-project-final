@@ -1,0 +1,67 @@
+.home-page header{
+    background-image: url(../utils/header-img.jpg);
+}
+
+header{
+    background-size: cover;
+    background-position: center;
+}
+
+header h1{
+    font-size: 5rem;
+}
+
+.home-pahe header h1,
+.home-pahe header h2{
+    text-shadow: 2px 2px 8px #ffffff;
+}
+
+img {
+    border-style: solid;
+    border-width: 5px;
+}
+
+/* .Contactus {
+    background-image: url('../utils/istockphoto-884374384-170667a.webp');
+    background-position: center;
+    background-size: cover;
+    color: white;
+} */
+
+
+@media only screen and (max-width: 768px) {
+   
+    header {
+        background-size: cover; /* Further adjust background size for even smaller screens */
+    }
+   
+    header h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    
+    header {
+        background-size: auto; /* Further adjust background size for even smaller screens */
+    }
+    
+    header h1 {
+        font-size: 3rem;  
+    }
+
+    .container.my-5 .row .col-lg-6 h2 {
+        font-size: 18px; /* Further decrease font size for heading on smaller screens */
+    }
+    .container.my-5 .row .col-lg-6 p {
+        font-size: 12px; /* Further decrease font size for paragraph on smaller screens */
+    }
+    .container.my-5 .row .col-lg-6 button {
+        font-size: 12px; /* Further decrease font size for button on smaller screens */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    img {
+        border-width: 3px; /* Decrease border width for images on smaller screens */
+    }
+}

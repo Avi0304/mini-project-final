@@ -1,0 +1,78 @@
+/* LoginModal.css */
+
+.login-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+}
+
+.login-box-form {
+  background-color: rgba(61, 49, 49, 0.463);
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 500px; /* Limit the maximum width of the form */
+  width: 90%; /* Set width to 90% of the container */
+}
+
+.login-box header {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 50px;
+  color: white;
+}
+
+.login-box h3 {
+  color: white;
+}
+
+.login-box-form h3 {
+  color: rgb(4, 4, 113);
+}
+
+.form-width {
+  width: 100%; /* Make the form width 100% */
+  max-width: 500px; /* Limit the maximum width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.button {
+  width: 100%;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.center {
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .login-box header {
+      font-size: 30px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .login-box {
+      height: 80vh; /* Set full height for smaller screens */
+  }
+
+  .login-box-form {
+      width: 90%; /* Set width to 90% for smaller screens */
+  }
+
+  .button {
+      width: 100%;
+  }
+
+  .login-box-form input[type="text"],
+  .login-box-form input[type="email"],
+  .login-box-form input[type="password"] {
+    width: 100%; /* Set input field width to 100% for extra small screens */
+  }
+}

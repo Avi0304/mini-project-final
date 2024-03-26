@@ -1,0 +1,41 @@
+.success-container {
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  .tick-mark {
+    color: green;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .go-to-home-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .go-to-home-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  @media (max-width: 768px) {
+    .success-container {
+      margin-top: 40px; /* Adjusted margin for smaller screens */
+    }
+    
+    .tick-mark {
+      font-size: 25px; /* Adjusted font size for smaller screens */
+      margin-top: 5px; /* Adjusted margin for smaller screens */
+    }
+  }

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oswald:wght@200..700&display=swap');
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+/* Register page */
+
+.register{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./utils/login.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* box-shadow: rgba(0,0,0,0.35) 0px 5px 15px !important; */
+}
+
+.custom-width {
+    width: 420px; /* Adjust the width as needed */
+  }
+
+  .register-form {
+    background-color: rgba(252, 250, 250, 0.463);
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+
+  .register header {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 50px;
+    color: white;
+  }
+
+  .register h3{
+    /* text-align: center; */
+    /* background-color: rgb(2, 2, 75); */
+    color: white;
+    /* padding: 10px; */
+
+  }
+
+  .fill {
+    color: white;
+  }
+
+  .register-form h3{
+    /* text-align: center; */
+    color: rgb(4, 4, 113);
+    /* padding: 10px; */
+  }
+
+  .form-width {
+    width: 1040px;
+  }
+  .center1 {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    width: 98px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  
+  .center {
+    margin-top: 10px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .delete-icon {
+    margin-left: auto; 
+  }
+  
+  .add{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: 500px;
+    opacity: 0.5;
+    z-index: 1;
+  }

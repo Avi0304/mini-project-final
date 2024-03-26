@@ -1,0 +1,13 @@
+.menu-page header{
+    background-image: url('../utils/vegetables-set-left-black-slate.jpg');
+    /* height: 60vh; */
+}
+
+header{
+    background-size: cover;
+    background-position: center;
+}
+
+header h1{
+    font-size: 5rem;
+}
