@@ -59,3 +59,26 @@
     margin-bottom: 0; /* Reset margin-bottom */
   }
 }
+
+@media screen and (max-width: 390px) {
+  .shopping-cart {
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .table th,
+  .table td {
+    padding: 6px;
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
+
+  .buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons button {
+    margin-bottom: 0;
+  }
+}
