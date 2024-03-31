@@ -12,7 +12,7 @@ const RegistraterModal = () => {
       e.preventDefault();
       const { name, email, password } = credentials;
       try {
-          const response = await fetch("https://restaurant-two-pied.vercel.app/api/user/register", {
+          const response = await fetch("https://rest-backend-97ni.onrender.com/api/user/register", {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'
