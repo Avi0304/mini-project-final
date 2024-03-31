@@ -104,16 +104,9 @@ const Menu = () => {
     <>
       <NavBar Addtocart={Addtocart} userid={userid}/>
       <div className="menu-page">
-        <header className="h-100 min-vh-100 d-flex align-items-center text-light shadow">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-6 d-flex d-sm-block flex-column align-items-center">
-                <h1 className="mb-0 text-white fw-bold text-center text-sm-start">It's not just</h1>
-                <h1 className="mb-0 text-white fw-bold text-center text-sm-start">Food, It's an </h1>
-                <h1 className="mb-5 text-white fw-bold text-center text-sm-start">Experience</h1>
-                <Bookbtn/>
-              </div>
-            </div>
+      <header className="mt-5">
+          <div className="container h-100 d-flex align-items-center justify-content-center">
+            <h1 className="text-light">Book Table</h1>
           </div>
         </header>
       </div>
