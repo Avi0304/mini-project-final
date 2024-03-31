@@ -53,17 +53,12 @@ const Menu = () => {
   const fetchCategories = async () => {
     try {
       const response = await axios.get("https://rest-backend-97ni.onrender.com/api/items/get-item");
-      if (Array.isArray(response.data)) { // Check if response.data is an array
-        const categories = [...new Set(response.data.map((item) => item.category))];
-        setCategories(categories);
-      } else {
-        console.error("Error fetching categories: Response data is not an array", response.data);
-      }
+      const categories = [...new Set(response.data.map((item) => item.category))];
+      setCategories(categories);
     } catch (error) {
       console.error("Error fetching categories:", error);
     }
   };
-  
 
   const fetchuserId = async () => {
     try {
