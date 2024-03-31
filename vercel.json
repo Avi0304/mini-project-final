@@ -11,13 +11,6 @@
       "src": "/(.*)",
       "dest": "server.js"
     }
-  ],
-
-  "functions": {
-    "myFunction": {
-      "runtime": "nodejs12.x",
-      "timeout": 30 
-    }
-  }
+  ]
 
 }
