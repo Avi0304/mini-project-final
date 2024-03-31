@@ -131,21 +131,22 @@ const Menu = () => {
             >
               All Categories
             </button>
-            {categories.map((categoryItem) => (
-              <button
-                key={categoryItem}
-                type="button"
-                className={`btn btn-outline-primary ${category === categoryItem ? "active" : ""}`}
-                onClick={() => handleCategoryChange(categoryItem)}
-                style={{ marginRight: "10px" }}
-              >
-                {categoryItem}
-              </button>
-            ))}
+            <div className="d-flex flex-wrap">
+              {categories.map((categoryItem) => (
+                <button
+                  key={categoryItem}
+                  type="button"
+                  className={`btn btn-outline-primary ${category === categoryItem ? "active" : ""}`}
+                  onClick={() => handleCategoryChange(categoryItem)}
+                  style={{ marginRight: "10px", marginBottom: "10px" }}
+                >
+                  {categoryItem}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-
       {/* Display items */}
       {loading ? (
         <div className="text-center mt-5">Loading...</div>

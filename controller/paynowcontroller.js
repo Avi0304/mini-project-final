@@ -23,8 +23,8 @@ const session = await stripe.checkout.sessions.create({
     payment_method_types:["card"],
     line_items:lineItems,
     mode:"payment",
-    success_url:"http://localhost:3000/sucess",
-    cancel_url:"http://localhost:3000/cancel",
+    success_url:"https://mini-project-final-vert.vercel.app/sucess",
+    cancel_url:"https://mini-project-final-vert.vercel.app//cancel",
     billing_address_collection: 'auto', // Collect billing address
         shipping_address_collection: {
             allowed_countries: ["US"], // Allow shipping only to India
