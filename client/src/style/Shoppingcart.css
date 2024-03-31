@@ -1,43 +1,78 @@
+/* Keep existing styles */
 .shopping-cart {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 150px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  .table {
-    margin-bottom: 20px;
-  }
-  
-  .table th,
-  td {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.table {
+  margin-bottom: 20px;
+}
+
+.table th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column; /* Change flex-direction to column */
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: none;
+  margin-bottom: 10px; /* Add margin-bottom to create space between buttons */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .shopping-cart {
     padding: 10px;
-    text-align: left;
   }
-  
+
+  .table th,
+  .table td {
+    padding: 8px;
+  }
+
   .buttons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     flex-direction: row; /* Change flex-direction to row */
-    margin-top: 10px; /* Add margin-top to create space between buttons */
-    /* margin-right: 10px ; */
+    justify-content: space-between; /* Add space between buttons */
   }
-  
+
   .buttons button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: none; /* Remove transition */
-    margin-right: 20px;
+    margin-bottom: 0; /* Reset margin-bottom */
   }
-  
-  /* Remove hover effect */
-  /* .buttons button:hover {
-    background-color: #153322;
+}
+
+@media screen and (max-width: 410px) {
+  .shopping-cart {
+    padding: 10px;
   }
-   */
+
+  .table th,
+  .table td {
+    padding: 8px;
+  }
+
+  .buttons {
+    flex-direction: row; /* Change flex-direction to row */
+    justify-content: space-between; /* Add space between buttons */
+  }
+
+  .buttons button {
+    margin-bottom: 0; /* Reset margin-bottom */
+  }
+}
