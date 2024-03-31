@@ -56,8 +56,13 @@
   }
 
   .buttons button {
-    margin-bottom: 0; /* Reset margin-bottom */
+    margin-bottom: 5px; /* Reset margin-bottom */
   }
+
+  .table {
+    max-width: 90%; /* Adjust as needed */
+  }
+}
 }
 
 @media screen and (max-width: 390px) {
@@ -79,6 +84,11 @@
   }
 
   .buttons button {
-    margin-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .table {
+    max-width: 70%; /* Adjust as needed */
   }
 }
+
