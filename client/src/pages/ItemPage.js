@@ -28,7 +28,7 @@ const ItemPage = () => {
   // Get All items
   const getallitems = async () => {
     try {
-      const { data } = await axios.get("/api/items/get-item");
+      const { data } = await axios.get("https://rest-backend-97ni.onrender.com/api/items/get-item");
       setItems(data);
       console.log(data);
     } catch (error) {
@@ -39,7 +39,7 @@ const ItemPage = () => {
   // Add Items
   const additem = async () => {
     try {
-      await axios.post("/api/items/add-item", newItem);
+      await axios.post("https://rest-backend-97ni.onrender.com/api/items/add-item", newItem);
       setNewItem({ name: "", price: "", category: "", image: "" });
       getallitems();
       message.success("Item added successfully");
@@ -52,7 +52,7 @@ const ItemPage = () => {
   // Delete Item
   const deleteItem = async (itemId) => {
     try {
-      await axios.delete(`/api/items/delete-item/${itemId}`); // Use itemId._id
+      await axios.delete(`https://rest-backend-97ni.onrender.com/api/items/delete-item/${itemId}`); // Use itemId._id
       // Refresh the item list after deletion
       getallitems();
       message.success("Item deleted successfully");
@@ -70,7 +70,7 @@ const ItemPage = () => {
   // Update Item
   const updateItem = async () => {
     try {
-      await axios.put(`/api/items/edit-item/${editItem.id}`, editItem); // Use editItem.id instead of editItem._id
+      await axios.put(`https://rest-backend-97ni.onrender.com/api/items/edit-item/${editItem.id}`, editItem); // Use editItem.id instead of editItem._id
       setEditItem({
         id: "",
         name: "",

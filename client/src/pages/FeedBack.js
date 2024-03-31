@@ -13,7 +13,7 @@ const FeedBack = () => {
 
   const getAllFeedback = async () => {
     try {
-      const { data } = await axios.get("/api/feedback/get-feedback");
+      const { data } = await axios.get("https://rest-backend-97ni.onrender.com/api/feedback/get-feedback");
       setFeedback(data);
     } catch (error) {
       console.error("Received error while getting feedback: ", error);
@@ -22,7 +22,7 @@ const FeedBack = () => {
 
   const deleteFeedback = async (feedbackid) => {
     try {
-      await axios.delete(`/api/feedback/delete-feedback/${feedbackid}`);
+      await axios.delete(`https://rest-backend-97ni.onrender.com/api/feedback/delete-feedback/${feedbackid}`);
       getAllFeedback();
       message.success("Review Delete successfully.....");
     } catch (error) {

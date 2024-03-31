@@ -11,7 +11,7 @@ const Homepage = () => {
   useEffect(()=> {
     const getallitems = async () => {
       try {
-          const { data } = await axios.get('/api/items/get-item');
+          const { data } = await axios.get('https://rest-backend-97ni.onrender.com/api/items/get-item');
           setitemData(data);
           console.log(data);
       } catch (error) {

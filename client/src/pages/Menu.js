@@ -35,7 +35,7 @@ const Menu = () => {
       setLoading(true);
       setError(null);
 
-      let url = "/api/items/get-item";
+      let url = "https://rest-backend-97ni.onrender.com/api/items/get-item";
       if (category) {
         url += `?category=${category}`; // Add category query parameter if selected
       }
@@ -52,7 +52,7 @@ const Menu = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get("/api/items/get-item");
+      const response = await axios.get("https://rest-backend-97ni.onrender.com/api/items/get-item");
       if (Array.isArray(response.data)) { // Check if response.data is an array
         const categories = [...new Set(response.data.map((item) => item.category))];
         setCategories(categories);
@@ -93,7 +93,7 @@ const Menu = () => {
         return;
       }
 
-      const response = await axios.post("/api/cart/add-cart", { items: itemIds, userId: userIds });
+      const response = await axios.post("https://rest-backend-97ni.onrender.com/api/cart/add-cart", { items: itemIds, userId: userIds });
       console.log("Items added to cart", response.data);
       message.success("Item added to cart..");
     } catch (error) {

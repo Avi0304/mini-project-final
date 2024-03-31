@@ -25,7 +25,7 @@ const ShoppingCart = () => {
       if (token) {
         const decodedToken = jwtDecode(token);
         const userId = decodedToken.userId;
-        const response = await axios.get(`/api/cart/get-cart?userId=${userId}`);
+        const response = await axios.get(`https://rest-backend-97ni.onrender.com/api/cart/get-cart?userId=${userId}`);
         const cartData = response.data;
         if (cartData) {
           // Add quantity property to each item
@@ -66,7 +66,7 @@ const ShoppingCart = () => {
         const decodedToken = jwtDecode(token);
         const userId = decodedToken.userId;
 
-        const response = await axios.get(`/api/cart/get-cart?userId=${userId}`);
+        const response = await axios.get(`https://rest-backend-97ni.onrender.com/api/cart/get-cart?userId=${userId}`);
         const cartData = response.data;
 
         if (cartData && cartData.items && cartData.items.length > 0) {
@@ -82,7 +82,7 @@ const ShoppingCart = () => {
           );
 
           // Send the order data to the server
-          const orderResponse = await axios.post("/api/place/place-order", {
+          const orderResponse = await axios.post("https://rest-backend-97ni.onrender.com/api/place/place-order", {
             userId,
             items,
             total: totalPrice,
@@ -125,7 +125,7 @@ const ShoppingCart = () => {
         const decodedToken = jwtDecode(token);
         const userId = decodedToken.userId;
         console.log("Fetching cart data for userId:", userId);
-        const response = await axios.get(`/api/cart/get-cart?userId=${userId}`);
+        const response = await axios.get(`https://rest-backend-97ni.onrender.com/api/cart/get-cart?userId=${userId}`);
         console.log("Cart data response:", response.data);
         const cartData = response.data;
 
@@ -161,7 +161,7 @@ const ShoppingCart = () => {
 
           if (!result.error) {
             // Once payment is successful, delete the cart
-            await axios.delete(`/api/cart/delete-cart/${cartData._id}`);
+            await axios.delete(`https://rest-backend-97ni.onrender.com/api/cart/delete-cart/${cartData._id}`);
             setCart(null); 
           }
 
@@ -210,7 +210,7 @@ const ShoppingCart = () => {
 
   const deleteItem = async (itemId) => {
     try {
-      await axios.delete(`/api/cart/delete-cartitem/${itemId}`); // Use itemId._id
+      await axios.delete(`https://rest-backend-97ni.onrender.com/api/cart/delete-cartitem/${itemId}`); // Use itemId._id
       // Refresh the item list after deletion
       updateShoppingCart();
       message.success("Item deleted successfully");
