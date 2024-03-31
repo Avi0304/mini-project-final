@@ -11,12 +11,15 @@
 
 .table {
   margin-bottom: 20px;
+  width: 100%; /* Set table width to 100% */
+  overflow-x: auto; /* Add horizontal scroll for small screens */
 }
 
 .table th,
-td {
+.table td {
   padding: 10px;
   text-align: left;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 .buttons {
@@ -38,26 +41,6 @@ td {
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
-  .shopping-cart {
-    padding: 10px;
-  }
-
-  .table th,
-  .table td {
-    padding: 8px;
-  }
-
-  .buttons {
-    flex-direction: row; /* Change flex-direction to row */
-    justify-content: space-between; /* Add space between buttons */
-  }
-
-  .buttons button {
-    margin-bottom: 0; /* Reset margin-bottom */
-  }
-}
-
-@media screen and (max-width: 410px) {
   .shopping-cart {
     padding: 10px;
   }
