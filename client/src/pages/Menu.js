@@ -53,12 +53,17 @@ const Menu = () => {
   const fetchCategories = async () => {
     try {
       const response = await axios.get("/api/items/get-item");
-      const categories = [...new Set(response.data.map((item) => item.category))];
-      setCategories(categories);
+      if (Array.isArray(response.data)) { // Check if response.data is an array
+        const categories = [...new Set(response.data.map((item) => item.category))];
+        setCategories(categories);
+      } else {
+        console.error("Error fetching categories: Response data is not an array", response.data);
+      }
     } catch (error) {
       console.error("Error fetching categories:", error);
     }
   };
+  
 
   const fetchuserId = async () => {
     try {

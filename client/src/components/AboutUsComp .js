@@ -24,7 +24,7 @@ const AboutUsComp = () => {
 
       const addreview = async () => {
         try {
-          await axios.post("/api/feedback/add-feedback", newfeedback);
+          await axios.post("https://rest-backend-97ni.onrender.com/api/feedback/add-feedback", newfeedback);
           setnewfeedback({ name: "",  phone: "",message: "" });
           getallreview();
           message.success("review added successfully");

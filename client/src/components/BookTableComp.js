@@ -26,7 +26,7 @@ function BookTableComp() {
 
     const addtable = async () => {
         try {
-          await axios.post("/api/table/add-table", newtable);
+          await axios.post("https://rest-backend-97ni.onrender.com/api/table/add-table", newtable);
           setnewtable({ name: "", capacity: "", description: "", date: "", time: "" });
           getalltable();
           message.success("book table added successfully");
