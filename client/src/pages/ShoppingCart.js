@@ -144,7 +144,7 @@ const ShoppingCart = () => {
 
           console.log("Sending checkout session request with body:", body);
           const checkoutResponse = await fetch(
-            "http://localhost:8080/api/create-checkout-session",
+            "https://rest-backend-97ni.onrender.com/api/create-checkout-session",
             {
               method: "POST",
               headers: headers,

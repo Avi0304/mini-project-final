@@ -34,7 +34,7 @@ const AdminOrder = () => {
 
   const getAllOrders = async () => {
     try {
-      const response = await axios.get("/api/place/get-order");
+      const response = await axios.get("https://rest-backend-97ni.onrender.com/api/place/get-order");
       setOrders(response.data);
       console.log(response.data);
     } catch (error) {
@@ -44,7 +44,7 @@ const AdminOrder = () => {
 
   const deleteorder = async (orderId) => {
     try {
-      await axios.delete(`/api/place/delete-order/${orderId}`);
+      await axios.delete(`https://rest-backend-97ni.onrender.com/api/place/delete-order/${orderId}`);
       // Fetch updated list of orders after deleting the bill
       getAllOrders();
       message.success("Order deleted successfully");
@@ -105,7 +105,7 @@ const AdminOrder = () => {
         };
 
         // Send request to create a new bill
-        const response = await axios.post("/api/bills/add-bills", billData);
+        const response = await axios.post("https://rest-backend-97ni.onrender.com/api/bills/add-bills", billData);
 
         console.log(response.data);
         setbillcustomername(customerName);

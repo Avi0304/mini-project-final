@@ -14,7 +14,7 @@ const AdminBookTable = () => {
   // Get all table details
   const getAllTable = async () => {
     try {
-      const { data } = await axios.get("/api/table/get-table");
+      const { data } = await axios.get("https://rest-backend-97ni.onrender.com/api/table/get-table");
       setTable(data);
       console.log(data);
     } catch (error) {
@@ -25,7 +25,7 @@ const AdminBookTable = () => {
   //delete table details
   const deleteTable = async (itemtable) => {
     try {
-      await axios.delete(`/api/table/delete-table/${itemtable}`);
+      await axios.delete(`https://rest-backend-97ni.onrender.com/api/table/delete-table/${itemtable}`);
       // Refresh the item list after deletion
       getAllTable();
       message.success("Table deleted successfully");
