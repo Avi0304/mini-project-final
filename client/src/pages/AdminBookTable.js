@@ -3,7 +3,6 @@ import DefaultLayout from "../components/DefaultLayout";
 import axios from "axios";
 import { DeleteOutlined } from "@ant-design/icons";
 import { message } from "antd";
-import '../style/table.css'
 
 const AdminBookTable = () => {
   const [table, setTable] = useState([]);
@@ -38,7 +37,7 @@ const AdminBookTable = () => {
 
   return (
     <DefaultLayout>
-      <h1 className="mb-5">Book Table</h1>
+      <h1 className="fw-bold text-black large-text">Book Table</h1>
 
       {/* Display table of tables */}
       <table className="table">
@@ -49,8 +48,6 @@ const AdminBookTable = () => {
             <th>Table Number</th>
             <th>Description</th>
             <th>Capacity</th>
-            <th>Date</th>
-            <th>Time</th>
             <th>Remove</th>
           </tr>
         </thead>
@@ -62,8 +59,6 @@ const AdminBookTable = () => {
               <td>{tableItem.tableNumber}</td>
               <td>{tableItem.description}</td>
               <td>{tableItem.capacity}</td>
-              <td>{tableItem.date}</td>
-              <td>{tableItem.time}</td>
               <td>
                 <DeleteOutlined
                   className="delete-icon"

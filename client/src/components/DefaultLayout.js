@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Layout, Menu } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import {
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
+
   LogoutOutlined,
   HomeOutlined,
   UnorderedListOutlined,
@@ -13,7 +12,7 @@ import {
 } from "@ant-design/icons"; 
 import "../style/DefaultLayout.css";
 import {  message } from 'antd';
-const { Header, Sider, Content } = Layout;
+const {  Sider, Content } = Layout;
 
 
 const DefaultLayout = ({ children }) => {
@@ -67,7 +66,7 @@ const DefaultLayout = ({ children }) => {
         </Menu>
       </Sider>
       <Layout className="site-layout">
-        <Header className="site-layout-background" style={{ padding: 0 }}>
+        {/* <Header className="site-layout-background" style={{ padding: 0 }}>
           {React.createElement(
             collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
             {
@@ -75,7 +74,7 @@ const DefaultLayout = ({ children }) => {
               onClick: toggle,
             }
           )}
-        </Header>
+        </Header>  */}
         <Content
           className="site-layout-background ant-layout-content" 
           style={{
