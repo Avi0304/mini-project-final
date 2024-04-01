@@ -32,3 +32,48 @@
 .delete-icon:hover {
   color: darkred;
 }
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  
+
+  .table th,
+  .table td {
+    padding: 8px;
+  }
+
+
+
+  .table {
+    max-width: 90%; /* Adjust as needed */
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .shopping-cart {
+    padding: 5px;
+    margin-top: 25px;
+  }
+
+  .table th,
+  .table td {
+    padding: 6px;
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
+
+  .buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons button {
+    margin-bottom: 5px;
+  }
+
+  .table {
+    max-width: calc(100% - 30px); /* Adjust as needed */
+  }
+}
+
