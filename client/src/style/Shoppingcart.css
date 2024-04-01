@@ -91,4 +91,14 @@
   .table {
     max-width: calc(100% - 20px); /* Adjust as needed */
   }
+
+  .table td img {
+    max-width: 100%; /* Ensure image fits within the table cell */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Adjust input field width */
+  .table td input[type="number"] {
+    width: 50px; /* Adjust as needed */
+  }
 }
