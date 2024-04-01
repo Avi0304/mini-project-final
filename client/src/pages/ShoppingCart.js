@@ -242,7 +242,7 @@ const ShoppingCart = () => {
                   {cart.items.map((item) => (
                     <tr key={item.itemId}>
                       <td>
-                        <img src={item.image} alt={item.name} style={{ width: '100px', border: "none", maxHeight: '75px', maxWidth: '100px' }}/>
+                        <img src={item.image} alt={item.name} style={{ width: '100px', border: "none", maxHeight: '75px'}}/>
                       </td>
                       <td>{item.name}</td>
                       {/* <td>${item.price}</td> */}

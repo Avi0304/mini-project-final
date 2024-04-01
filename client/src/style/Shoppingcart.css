@@ -44,7 +44,7 @@
 @media screen and (max-width: 768px) {
   .shopping-cart {
     padding: 10px;
-    margin-top: 35px;
+    margin-top: 125px;
   }
 
   .table th,
@@ -64,12 +64,22 @@
   .table {
     max-width: 90%; /* Adjust as needed */
   }
+
+  .table td img {
+    max-width: 100%; /* Ensure image fits within the table cell */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Adjust input field width */
+  .table td input[type="number"] {
+    width: 50px; /* Adjust as needed */
+  }
 }
 
 @media screen and (max-width: 390px) {
   .shopping-cart {
     padding: 5px;
-    margin-top: 35px;
+    margin-top: 125px;
   }
 
   .table th,
@@ -93,7 +103,7 @@
   }
 
   .table td img {
-    max-width: 85%; /* Ensure image fits within the table cell */
+    max-width: 100%; /* Ensure image fits within the table cell */
     height: auto; /* Maintain aspect ratio */
   }
 
