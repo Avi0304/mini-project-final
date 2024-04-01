@@ -63,6 +63,7 @@
 
   .table {
     max-width: 90%; /* Adjust as needed */
+    margin: 0 auto;
   }
 
   .table td img {
@@ -100,6 +101,7 @@
 
   .table {
     max-width: calc(100% - 20px); /* Adjust as needed */
+    margin: 0 auto;
   }
 
   .table td img {

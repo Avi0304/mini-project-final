@@ -270,7 +270,7 @@ const ShoppingCart = () => {
                 </tbody>
               </Table>
               {!orderPlaced && (
-                <p className="text-end fw-bold ml-auto fs-6">Total: ${calculateTotalPrice().toFixed(2)}</p>
+                <p className="text-end fw-bold ml-auto fs-6" style={{marginTop: "11px", marginRight: "10px"}}>Total: ${calculateTotalPrice().toFixed(2)}</p>
               )}
             </>
           ) : (
