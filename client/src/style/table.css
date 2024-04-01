@@ -73,7 +73,7 @@
   }
 
   .table {
-    max-width: calc(100% - 30px); /* Adjust as needed */
+    max-width: 90%; /* Adjust as needed */
   }
 }
 
