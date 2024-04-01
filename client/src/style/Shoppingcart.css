@@ -93,7 +93,7 @@
   }
 
   .table td img {
-    max-width: 100%; /* Ensure image fits within the table cell */
+    max-width: 85%; /* Ensure image fits within the table cell */
     height: auto; /* Maintain aspect ratio */
   }
 
