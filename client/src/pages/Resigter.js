@@ -23,7 +23,7 @@ const Resigter =  () => {
               const textResponse = await response.text(); // Read the response as plain text
               console.log(textResponse); // Log the response
               message.success("Account created successfully");
-              navigate("/loginweb");
+              navigate("/admin/login");
           } else {
               const errorResponse = await response.json(); // Read the error response as JSON
               if (errorResponse.message === "User with same email already exists") {
