@@ -264,7 +264,7 @@ const ShoppingCart = () => {
                           onClick={() => deleteItem(item._id)}
                         />
                       </td>
-                      <td>${(item.price * item.quantity).toFixed(2)}</td>
+                      <td>Rs. {(item.price * item.quantity).toFixed(2)}</td>
                     </tr>
                   ))}
                 </tbody>
