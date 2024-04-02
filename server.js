@@ -39,7 +39,7 @@ app.use("/api",require("./routes/Paynow"));
 // Handle preflight requests
 app.options("/api/user/register", (req, res) => {
   res.header("Access-Control-Allow-Origin", "https://mini-project-final-vert.vercel.app");
-  res.header("Access-Control-Allow-Methods", "POST, GET, DELETE");
+  res.header("Access-Control-Allow-Methods", "POST, GET, DELETE, PUT");
   res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.sendStatus(200);
 });
