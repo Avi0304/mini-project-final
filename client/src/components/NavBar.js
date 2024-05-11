@@ -105,7 +105,7 @@ const NavBar = (props) => {
               </NavLink>
               {user ? (
                 <Nav.Link onClick={handleLogout}>
-                  Welcome,  {user}
+                  Logout
                 </Nav.Link>
               ) : (
                 <NavLink to="/loginweb" activeClassName="active" className="nav-link">

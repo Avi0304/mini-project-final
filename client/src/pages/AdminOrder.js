@@ -164,7 +164,7 @@ const AdminOrder = () => {
                   ))}
                 </ul>
               </td>
-              <td>${order.total}</td>
+              <td>Rs. {order.total}</td>
               <td style={{ textAlign: "center" }}>
                 <Button
                   onClick={() => handleShowModal(order)}
