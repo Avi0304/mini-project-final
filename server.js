@@ -17,7 +17,7 @@ const app = express();
 //middlwares
 app.use(cors({
   origin: ["https://mini-project-final-vert.vercel.app"],
-  methods: ["POST", "GET", "DELETE"],
+  methods: ["POST", "GET", "DELETE", "PUT"],
   credentials: true
 }));
 app.use(express.json());
